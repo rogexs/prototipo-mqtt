@@ -4,18 +4,19 @@ import paho.mqtt.client as mqtt
 import psycopg2
 
 # Configuración del broker (Cluster HiveMQ)
-broker_url = "fee7a60180ef4e41a8186ff373e7ff32.s1.eu.hivemq.cloud"
+broker_url = "8354da8bdcb649a2ba22c8fea0302842.s1.eu.hivemq.cloud"
 broker_port = 8883
-username = "Receptor-99"
-password = "Receptor-99"
+username = "User-1"
+password = "Ensalada-99"
 
 # Configuración de la base de datos PostgreSQL
 db_config = {
-    'host': 'dpg-crq9kqij1k6c738de76g-a.ohio-postgres.render.com',
+    'host': 'dpg-cvc9uptds78s73agvhs0-a.ohio-postgres.render.com',  # Solo el nombre del host
     'port': 5432,
-    'database': 'mqtt_rr94',
-    'user': 'root',
-    'password': '8OEMNb7jDnLGwGA0JBiWkTkH94OQClRT'
+    'database': 'example_postgresql_l41e',
+    'user': 'example_postgresql_l41e_user',
+    'password': 'fUNnsgLRgTohXj9o12yBOWnKovlAxhoC',
+    #'sslmode': 'require'  # Importante para conexiones a Render
 }
 
 # Crear la aplicación Flask
